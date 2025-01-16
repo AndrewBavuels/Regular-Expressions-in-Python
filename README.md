@@ -35,5 +35,39 @@ The project is organized into the following sections:
 
 To use the library in your code, simply import it, **as you will see in the noteboks:**
 
-```bash
+```sh
 import re
+```
+
+## Wrap-Up: String Operations in Python
+
+This section highlights key operations for working with strings in Python, with practical examples for each.
+
+### 1. **Changing Case**
+
+- Convert to lowercase: `my_string.lower()`
+- Convert to uppercase: `my_string.upper()`
+- Capitalize the first character: `my_string.capitalize()`
+
+### 2. **Splitting Strings**
+
+- Split at a specified separator: `my_string.split(sep=" ", maxsplit=2)`
+- Reverse split starting from the right: `my_string.rsplit(sep=" ", maxsplit=2)`
+- Handle escape sequences:
+  - `\n`: Moves text to a new line.
+  - `\r`: Moves the cursor to the start of the line, overwriting existing text.
+
+### 3. **Joining Strings**
+
+Concatenate elements of a list or iterable into a single string using a separator:
+
+```sh
+" ".join(["this", "is", "a", "string"])  # Output: "this is a string"
+"_".join(["this", "is", "a", "string"])  # Output: "this_is_a_string"
+```
+
+### 4. **Stripping & Trimming**
+
+- Remove characters from both ends: `.strip()`
+- Remove characters from the right end: `.rstrip()`
+- Remove characters from the left end: `.lstrip()`
